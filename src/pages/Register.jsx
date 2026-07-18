@@ -12,7 +12,7 @@ function Register() {
         lastName: "",
         email: "",
         password: "",
-        role: "buyer", // "farmer", "buyer", or "logistics"
+        role: "buyer", // "farmer", "buyer"
         phone: "",
     });
     const [error, setError]     = useState("");
@@ -42,9 +42,9 @@ function Register() {
         <div className="auth-page">
             <div className="auth-card auth-card--wide">
                 <div className="auth-card__header">
-                    <h1 className="auth-card__title">🍅 Join TomatoLink</h1>
+                    <h1 className="auth-card__title">Create Your Account</h1>
                     <p className="auth-card__subtitle">
-                        Create your free account and start trading
+                        Input your details to create a new account
                     </p>
                 </div>
 
@@ -55,7 +55,7 @@ function Register() {
                     <div className="form-group">
                         <label className="form-label">I am a...</label>
                         <div className="role-picker">
-                            {["farmer", "buyer", "logistics"].map((r) => (
+                            {["farmer", "buyer"].map((r) => (
                                 <button
                                     key={r}
                                     type="button"
@@ -64,7 +64,6 @@ function Register() {
                                 >
                                     {r === "farmer"    && "👨‍🌾 Farmer"}
                                     {r === "buyer"     && "🛒 Buyer"}
-                                    {r === "logistics" && "🚛 Logistics"}
                                 </button>
                             ))}
                         </div>
@@ -142,7 +141,7 @@ function Register() {
                         className="auth-btn"
                         disabled={loading}
                     >
-                        {loading ? "Creating account..." : "Create Free Account"}
+                        {loading ? "Creating account..." : "Create New Account"}
                     </button>
                 </form>
 

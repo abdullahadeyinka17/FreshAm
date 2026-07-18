@@ -16,7 +16,7 @@ function Home() {
                         to Buyers Directly
                     </h1>
                     <p className="hero__subtitle">
-                        TomatoLink reduces post-harvest losses by connecting
+                        FreshAm reduces post-harvest losses by connecting
                         tomato farmers directly to buyers, logistics providers,
                         and markets across Nigeria.
                     </p>
@@ -60,7 +60,7 @@ function Home() {
 
             {/* ── How It Works ── */}
             <section className="how-it-works">
-                <h2 className="section__title">How TomatoLink Works</h2>
+                <h2 className="section__title">How FreshAm Works</h2>
                 <p className="section__subtitle">
                     Simple steps to connect farmers and buyers
                 </p>
@@ -98,7 +98,7 @@ function Home() {
             {/* ── CTA Banner ── */}
             <section className="cta-banner">
                 <h2>Ready to reduce your post-harvest losses?</h2>
-                <p>Join hundreds of farmers already using TomatoLink</p>
+                <p>Join hundreds of farmers already using FreshAm</p>
                 <Link to="/register" className="btn btn--white">
                     Create Free Account
                 </Link>

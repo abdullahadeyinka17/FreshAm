@@ -38,7 +38,7 @@ function Marketplace() {
             <div className="marketplace__header">
                 <div className="marketplace__header-text">
                     <h1>🍅 Marketplace</h1>
-                    <p>Fresh produce listings from farmers across Nigeria</p>
+                    <p>Fresh tomatos listings from farmers across Nigeria</p>
                 </div>
 
                 {/* Search */}

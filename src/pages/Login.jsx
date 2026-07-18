@@ -37,7 +37,7 @@ function Login() {
                 <div className="auth-card__header">
                     <h1 className="auth-card__title">🍅 Welcome back</h1>
                     <p className="auth-card__subtitle">
-                        Sign in to your TomatoLink account
+                        Sign in to your FreshAm account
                     </p>
                 </div>
 
@@ -83,7 +83,7 @@ function Login() {
                 <p className="auth-card__footer">
                     Don't have an account?{" "}
                     <Link to="/register" className="auth-link">
-                        Create one free
+                        Sign Up
                     </Link>
                 </p>
             </div>

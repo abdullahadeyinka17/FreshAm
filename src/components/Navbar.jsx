@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+// import logo from "./assets/FreshAm.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -15,7 +16,7 @@ function Navbar() {
         <nav className="navbar">
             {/* Logo */}
             <NavLink to="/" className="navbar__logo">
-                🍅 TomatoLink
+                FreshAm
             </NavLink>
 
             <div className="navbar__links">
