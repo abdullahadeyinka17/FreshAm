@@ -17,7 +17,7 @@ function Home() {
                     </h1>
                     <p className="hero__subtitle">
                         FreshAm reduces post-harvest losses by connecting
-                        tomato farmers directly to buyers, logistics providers,
+                        tomato farmers directly to buyers,
                         and markets across Nigeria.
                     </p>
                     <div className="hero__cta">
@@ -34,7 +34,7 @@ function Home() {
                 </div>
 
                 <div className="hero__image">
-                    <div className="hero__image-placeholder">🍅</div>
+                    <div className="hero__image-placeholder"> <img src="/img/tomatos.png" alt="Fresh Tomatoes" className="hero__image-img"/> </div>
                 </div>
             </section>
 
@@ -100,7 +100,7 @@ function Home() {
                 <h2>Ready to reduce your post-harvest losses?</h2>
                 <p>Join hundreds of farmers already using FreshAm</p>
                 <Link to="/register" className="btn btn--white">
-                    Create Free Account
+                    Create an Account
                 </Link>
             </section>
         </div>
