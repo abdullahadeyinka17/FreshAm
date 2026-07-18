@@ -1,0 +1,25 @@
+/* @import url(./variables.css); */
+
+/* Global reset */
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app { min-height: 100vh; }
+.main { min-height: calc(100vh - 65px); }
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

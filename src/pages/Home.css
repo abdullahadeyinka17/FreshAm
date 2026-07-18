@@ -1,0 +1,212 @@
+.home { overflow-x: hidden; }
+
+/* ── Hero ── */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem 4rem;
+}
+
+.hero__content { flex: 1; }
+
+.hero__badge {
+    display: inline-block;
+    background: #fff0f0;
+    color: #e63946;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 1.25rem;
+}
+
+.hero__title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #1a1a1a;
+    margin-bottom: 1.25rem;
+}
+
+.hero__subtitle {
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 2rem;
+}
+
+.hero__cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.hero__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__image-placeholder {
+    font-size: 12rem;
+    line-height: 1;
+    filter: drop-shadow(0 20px 40px rgba(230,57,70,0.2));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-15px); }
+}
+
+/* ── Buttons ── */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: all 0.15s;
+}
+
+.btn--primary {
+    background: #e63946;
+    color: white;
+}
+
+.btn--primary:hover { background: #c1121f; transform: translateY(-1px); }
+
+.btn--outline {
+    border: 1.5px solid #e63946;
+    color: #e63946;
+    background: transparent;
+}
+
+.btn--outline:hover { background: #fff0f0; }
+
+.btn--white {
+    background: white;
+    color: #e63946;
+    font-weight: 700;
+}
+
+.btn--white:hover { background: #f9f9f9; }
+
+/* ── Stats ── */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    background: #e63946;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    padding: 1rem 3rem;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat:last-child { border-right: none; }
+
+.stat__number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.stat__label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* ── How It Works ── */
+.how-it-works {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.section__subtitle {
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    max-width: 250px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.04);
+}
+
+.step__icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+.step__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.step__desc { font-size: 13px; color: #666; line-height: 1.6; }
+
+.step__arrow {
+    font-size: 1.5rem;
+    color: #e63946;
+    font-weight: bold;
+}
+
+/* ── CTA Banner ── */
+.cta-banner {
+    background: linear-gradient(135deg, #e63946, #c1121f);
+    text-align: center;
+    padding: 5rem 2rem;
+    color: white;
+}
+
+.cta-banner h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.cta-banner p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; padding: 3rem 1.5rem; }
+    .hero__title { font-size: 2.2rem; }
+    .hero__cta { justify-content: center; }
+    .hero__image-placeholder { font-size: 7rem; }
+    .stat { padding: 1rem 1.5rem; }
+    .step__arrow { transform: rotate(90deg); }
+}

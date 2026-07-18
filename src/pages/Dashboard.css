@@ -1,0 +1,150 @@
+.dashboard {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+}
+
+.dashboard__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.dashboard__header h1 { font-size: 1.8rem; font-weight: 800; color: #1a1a1a; }
+.dashboard__role { color: #888; font-size: 13px; margin-top: 0.25rem; }
+
+.btn-primary {
+    background: #e63946;
+    color: white;
+    padding: 0.65rem 1.25rem;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    display: inline-block;
+    transition: background 0.15s;
+}
+
+.btn-primary:hover { background: #c1121f; }
+
+/* ── Stats ── */
+.dashboard__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.dash-stat {
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.dash-stat__num {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #e63946;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.dash-stat__label { font-size: 12px; color: #999; }
+
+/* ── Section ── */
+.dashboard__section {
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.dashboard__section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.dashboard__section-header h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.view-all { font-size: 13px; color: #e63946; text-decoration: none; font-weight: 600; }
+.view-all:hover { text-decoration: underline; }
+
+/* ── Table ── */
+.dashboard__table-wrap { overflow-x: auto; }
+
+.dashboard__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.dashboard__table th {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    color: #999;
+    font-weight: 600;
+    border-bottom: 1px solid #f0f0f0;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.dashboard__table td {
+    padding: 0.85rem 0.75rem;
+    border-bottom: 1px solid #f9f9f9;
+    color: #333;
+}
+
+.dashboard__table tr:last-child td { border-bottom: none; }
+
+.table-link { color: #e63946; font-weight: 600; text-decoration: none; font-size: 12px; }
+
+/* ── Status badges ── */
+.status-badge {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pending   { background: #fef9c3; color: #a16207; }
+.status-completed { background: #dcfce7; color: #15803d; }
+.status-cancelled { background: #fee2e2; color: #b91c1c; }
+.status-confirmed { background: #dbeafe; color: #1d4ed8; }
+
+.dashboard__empty {
+    text-align: center;
+    padding: 2.5rem;
+    color: #aaa;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-loading {
+    text-align: center;
+    padding: 5rem;
+    color: #666;
+    font-size: 1.1rem;
+}
