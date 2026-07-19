@@ -21,6 +21,39 @@ function Marketplace() {
             .finally(() => setLoading(false));
     }, []);
 
+    useEffect(() => {
+        const mockData = [
+            {
+                _id: "1",
+                name: "Fresh Tomatoes",
+                price: 1500,
+                quantity: 500,
+                location: "Kano, Nigeria",
+                category: "fresh"
+            },
+            {
+                _id: "2",
+                name: "Roma Tomatoes",
+                price: 2000,
+                quantity: 300,
+                location: "Jos, Nigeria",
+                category: "fresh"
+            },
+            {
+                _id: "3",
+                name: "Plum Tomatoes",
+                price: 1800,
+                quantity: 200,
+                location: "Kaduna, Nigeria",
+                category: "fresh"
+            },
+        ];
+
+        setProduce(mockData);
+        setLoading(false);
+    
+    }, []);
+
     // Filter produce based on search + category filter
     const filtered = produce.filter((item) => {
         const matchSearch = item.name?.toLowerCase().includes(search.toLowerCase()) ||

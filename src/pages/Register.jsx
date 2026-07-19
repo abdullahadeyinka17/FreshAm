@@ -12,7 +12,7 @@ function Register() {
         lastName: "",
         email: "",
         password: "",
-        role: "buyer", // "farmer", "buyer"
+        role: "buyer", // "farmer", "buyer", or logistics
         phone: "",
     });
     const [error, setError]     = useState("");
@@ -55,15 +55,16 @@ function Register() {
                     <div className="form-group">
                         <label className="form-label">I am a...</label>
                         <div className="role-picker">
-                            {["farmer", "buyer"].map((r) => (
+                            {["farmer", "buyer", "logistics"].map((r) => (
                                 <button
                                     key={r}
                                     type="button"
                                     className={`role-btn ${form.role === r ? "active" : ""}`}
                                     onClick={() => setForm({ ...form, role: r })}
                                 >
-                                    {r === "farmer"    && "👨‍🌾 Farmer"}
-                                    {r === "buyer"     && "🛒 Buyer"}
+                                    {r === "farmer"    && " Farmer"}
+                                    {r === "buyer"     && " Buyer"}
+                                    {r === "logistics" && " Logistics"}
                                 </button>
                             ))}
                         </div>
